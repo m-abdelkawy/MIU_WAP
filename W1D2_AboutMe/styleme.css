@@ -1,0 +1,23 @@
+body {
+  background-color: black;
+  color: white;
+  text-align: left;
+}
+.emphasize {
+  color: red;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15pt;
+  font-style: italic;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+h1 {
+  color: wheat;
+}
+h3{
+    color:whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+}

@@ -1,0 +1,57 @@
+body {
+  background-color: white;
+  color: #404040;
+  font-size: 11pt;
+  font-family: Georgia, Garamond, serif;
+}
+
+a {
+  color: #a4a400;
+}
+
+h2.header {
+  color: #a4a400;
+  background-color: #f0f0f0;
+  text-align: left;
+  font-family: "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: underline;
+  font-size: 18pt;
+}
+
+h2#main-header {
+  text-align: center;
+  align-content: center;
+  font-size: 22pt;
+  font-weight: bold;
+}
+
+.emphasize{
+  font-weight: bold;
+}
+
+pre{
+  white-space: pre-line;
+  font-family: inherit;
+}
+pre.user-comment{
+  background-color: yellow;
+}
+.user-comments > pre{
+ margin: 10px 25px 10px 25px;
+}
+section#footer{
+  text-align: right;
+}
+pre#copyright{
+  text-align: left;
+  float: right;
+  white-space: pre;
+}
+
+/* div#copyright{
+  text-align: left;
+  float: right;
+  white-space: pre;
+} */

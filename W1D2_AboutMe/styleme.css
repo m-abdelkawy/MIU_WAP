@@ -8,6 +8,7 @@ body {
   font-family: "Courier New", Courier, monospace;
   font-size: 15pt;
   font-style: italic;
+  font-weight: bold;
 }
 a {
   color: white;
@@ -29,6 +30,9 @@ h3 {
   content: "";
   clear: both;
   display: table;
+}
+a{
+  color: red;
 }
 a:hover{
 text-decoration: underline;

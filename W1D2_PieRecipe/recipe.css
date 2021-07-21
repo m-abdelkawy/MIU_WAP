@@ -3,6 +3,7 @@ body {
   color: #404040;
   font-size: 11pt;
   font-family: Georgia, Garamond, serif;
+  background-image: url("recipeImages/silverware.jpg");
 }
 
 a {
@@ -48,6 +49,7 @@ pre#copyright{
   text-align: left;
   float: right;
   white-space: pre;
+  font-family: monospace;
 }
 
 /* div#copyright{

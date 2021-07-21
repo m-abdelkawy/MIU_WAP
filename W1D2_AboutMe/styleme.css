@@ -16,8 +16,23 @@ a {
 h1 {
   color: wheat;
 }
-h3{
-    color:whitesmoke;
-    font-family: 'Times New Roman', Times, serif;
-    font-style: normal;
+h3 {
+  color: whitesmoke;
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+}
+.column {
+  float: left;
+  padding: 5px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+a:hover{
+text-decoration: underline;
+}
+p::first-letter{
+    font-size: 1.5em;
 }

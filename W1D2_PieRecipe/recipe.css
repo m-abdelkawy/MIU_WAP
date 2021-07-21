@@ -41,7 +41,7 @@ pre.user-comment{
 .user-comments > pre{
  margin: 10px 25px 10px 25px;
 }
-section#footer{
+div#validation{
   text-align: right;
 }
 pre#copyright{

@@ -40,7 +40,7 @@ div#content-area {
   position: relative;
 }
 
-section#rating-sec {
+#rating-sec {
   /* background-color: blue; DELETE
   height: 500px; */
   width: 550px;
@@ -54,12 +54,12 @@ section#rating-sec {
   float: left;
 }
 
-section#rating-header {
+#rating-header {
   border-radius: 20px 0 0 0;
   background-image: url("assets/rbg.png");
 }
 
-section#rating-reviews {
+#rating-reviews {
   /* height: 400px; */
   width: 550px;
   /* background-color: burlywood; */

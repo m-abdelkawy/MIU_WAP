@@ -1,0 +1,59 @@
+.header {
+  font-size: 18pt;
+  font-family: "Courier New", Courier, monospace;
+  font-style: normal;
+  font-weight: bold;
+  background-color: green;
+  text-align: center;
+  padding: 20px;
+}
+
+.grid-container {
+  display: grid;
+  /*grid-template-columns: 25% 50% 25%;*/
+  grid-template-rows: 80px 40px 150px 80px;
+
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.columns{
+
+    flex-wrap: wrap;
+}
+
+.menu {
+    background-color: red;
+    flex-direction: row;
+  }
+
+.col-flex-left {
+  background-color: gray;
+  flex: 1;
+}
+.col-flex-mid {
+  background-color: blue;
+  flex: 2;
+}
+.col-flex-right {
+  background-color: gray;
+  flex: 1;
+}
+
+
+.footer {
+  background-color: cyan;
+}
+
+@media (max-width: 600px) {
+  .columns > * {
+    flex: 50%;
+  }
+  .col-flex-mid {
+    order: 3;
+  }
+}

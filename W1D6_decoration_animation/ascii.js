@@ -40,7 +40,7 @@ window.onload = function () {
         console.log(animation);
         console.log("--------Frames--------");
         console.log(frames);*/
-    }
+    };
 
     let index = 0;
     document.getElementById("start").onclick = function () {
@@ -54,7 +54,7 @@ window.onload = function () {
         if (frames) {
             startDisplayInterval();
         }
-    }
+    };
 
     document.getElementById("stop").onclick = function () {
         document.getElementById("stop").disabled = true;
@@ -62,24 +62,25 @@ window.onload = function () {
         document.getElementById("start").disabled = false;
         document.getElementById("animation").disabled = false;
         document.getElementById("text-area").innerHTML = "";
+        index = 0;
         if (startIntervalId) {
             clearInterval(startIntervalId);
         }
-    }
+    };
 
     document.getElementById("turbo").onchange = function () {
         clearInterval(startIntervalId);
         //document.getElementById("stop").disabled = true;
         //document.getElementById("text-area").innerHTML = "";
         //clearInterval(startIntervalId);
-        start
+        
         if (document.getElementById("turbo").checked) {
             timeInterval = 50;
         } else {
             timeInterval = 250;
         }
         startDisplayInterval();
-    }
+    };
 
     document.getElementById("fontsize").onchange = function () {
         let selectedFontSize = getFontSizeSelected();
@@ -108,7 +109,7 @@ window.onload = function () {
         }
         console.log("Selected: " + selectedFontSize + ", " + font_size);
         document.getElementById("text-area").style.fontSize = font_size;
-    }
+    };
 
     function getFrames(str) {
         return str.split("=====\n");
@@ -130,4 +131,4 @@ window.onload = function () {
 
         }, timeInterval);
     }
-}
+};

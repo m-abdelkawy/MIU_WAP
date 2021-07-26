@@ -47,7 +47,7 @@ window.onload = function () {
         if (startIntervalId) {
             clearInterval(startIntervalId);
         }
-        
+
         document.getElementById("start").disabled = true;
         document.getElementById("animation").disabled = true;
         document.getElementById("stop").disabled = false;
@@ -58,12 +58,12 @@ window.onload = function () {
 
     document.getElementById("stop").onclick = function () {
         document.getElementById("stop").disabled = true;
+        document.getElementById("stop").disabled = true;
+        document.getElementById("start").disabled = false;
+        document.getElementById("animation").disabled = false;
+        document.getElementById("text-area").innerHTML = "";
         if (startIntervalId) {
             clearInterval(startIntervalId);
-            document.getElementById("stop").disabled = true;
-            document.getElementById("start").disabled = false;
-        document.getElementById("animation").disabled = false;
-            document.getElementById("text-area").innerHTML = "";
         }
     }
 
@@ -113,21 +113,21 @@ window.onload = function () {
     function getFrames(str) {
         return str.split("=====\n");
     }
-    
+
     function getAnimationValue() {
         return document.getElementById("animation").value;
     }
-    
+
     function getFontSizeSelected() {
         return document.getElementById("fontsize").value;
     }
-    
-    function startDisplayInterval(){
+
+    function startDisplayInterval() {
         startIntervalId = setInterval(() => {
             //console.log("i: " + index + "  arr Length: " + frames.length);
             document.getElementById("text-area").innerHTML = frames[index++];
             if (index == frames.length) { index = 0; }
-    
+
         }, timeInterval);
     }
 }

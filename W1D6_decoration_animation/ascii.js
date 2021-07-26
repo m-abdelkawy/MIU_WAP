@@ -1,5 +1,5 @@
-"use strict"
 window.onload = function () {
+    "use strict";
     let animation = getAnimationValue();
     let frames;
 

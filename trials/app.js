@@ -1,16 +1,16 @@
-function earliestSpace(a, b, c){
-    let result = a;
-    let index = a.indexOf(" ");
-    if(index > b.indexOf(" ")){
-        result = b;
-        index = b.indexOf(" ");
+const VALIDATOR = (function () {
+    const validateFirstName = function (fname) {
+        return fname === "" ? false : true;
     }
-    if(index > c.indexOf(" ")){
-        result = c;
-        index = c.indexOf(" ");
+    const validateLastName = function (lname) {
+        return lname === "" ? false : true;
     }
-    return result;
-  }
-  
-  console.log(earliestSpace("This is a test", "Where it checks for spaces",
-  "bla bla bla"));
+    const validate = function () {
+        return validateFirstName(document.getElementById("first").value) && validateLastName(document.getElementById("last").value)
+    }
+    return {
+        validate: validate
+    }
+})();
+
+console.log(VALIDATOR.validate());

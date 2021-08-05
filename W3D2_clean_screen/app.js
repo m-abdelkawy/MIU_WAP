@@ -55,6 +55,6 @@ $(function () {
             $(".circle").css("height", parseInt($(".circle").css("height")) + growthAmount + "px");
         }, growthRate);
 
-        console.log("Interval Id: " + id);
+        //console.log("Interval Id: " + id);
     });
 });

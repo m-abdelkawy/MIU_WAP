@@ -1,4 +1,4 @@
-describe("pow", function () {
+/*describe("pow", function () {
 
     describe("raises x to the power 2", function () {
         function makeTest(x) {
@@ -67,4 +67,4 @@ describe("filterLongWords - returns words longer than i", function () {
     it(`['ford', 'honda', 'toyota', 'bmw'] words that are longer than 5 chars are ['toyota']`, function () {
         assert.equal(JSON.stringify(filterLongWords(['ford', 'honda', 'toyota', 'bmw'], 5)), JSON.stringify(['toyota']));
     });
-});
+});*/

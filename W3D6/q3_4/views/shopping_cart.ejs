@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <!-- <%= lstProduct %> -->
+        <!-- <% for(var i = 0; i < lstProduct.length; i++) { %>
+        <% -include ("product_details.ejs", lstProduct[i])%>
+            <% } %> -->
+
+        <% for (let i=0;i<lstProduct.length;i++){%>
+            <h2>Product Name: <%= lstProduct[i].name %></h2>
+            <h4>Product Id: <%= lstProduct[i].id %></h4>
+                <h4>Product Price: <%= lstProduct[i].price %> </h4>
+                <h4>Product Description: <%= lstProduct[i].description %> </h4>
+
+                <%}%>
+
+</body>
+
+</html>

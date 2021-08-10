@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <% for (let i=0;i<products.length;i++){%>
+        <%- include('product_details.ejs', products[i]) %>
+            <p>Quantity: <%= products[i].quantity %> </p>
+           <br>
+           <hr>
+            <%}%>
+            
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="utif-8">
+    <title>Ask 8 Ball</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="/js/index.js"></script>
+    <style>
+        .fail{
+            color: red;
+        }
+        .success{
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="ask">
+        <div>
+            <label>Ask 8 Ball: </label><br>
+            <input type="text" id="question">
+        </div>
+        <div>
+            <input type="submit" value="Ask 8 Ball"><br>
+            <p id="answer"></p>
+            <p id="msg"></p>
+        </div>
+    </form>
+</body>
+
+</html>

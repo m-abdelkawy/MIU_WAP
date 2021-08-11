@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Add product</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="/js/index.js"></script>
+    <style>
+        .success {
+            color: blue;
+        }
+
+        .fail {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="add_form">
+        <%- include('product_details.ejs') %>
+            <input type="hidden" value="<%= id %>" name="id">
+            <input type="submit" value="Add To Cart">
+
+    </form>
+    <div>
+        <span id="item_count">Items in cart: <%= item_count %></span>
+    </div>
+    <div>
+        <span id="msg"></span>
+    </div>
+    <!-- <a href="content">View Cart</a> -->
+
+</body>
+
+</html>

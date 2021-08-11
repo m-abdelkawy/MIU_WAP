@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <title>quiz</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script>
+        $(() => {
+    $('.btn').click(function (event) {
+        let id = parseInt(event.target.value);
+        $.get({
+            url: `/computers/${id}`,
+            contentType:"application/json; charset=utf-8"
+        }).done(function (data, status) {
+            data = JSON.parse(data);
+            $('#td1').text(data['cpu']);
+            $('#td2').text(data['ram']);
+            $('#td3').text(data['storage']);
+            $('#td4').text(data['price']);
+        }).fail(function () {
+            console.log("failed to get data!");
+        });
+    });
+});
+        </script>
+    </head>
+    <body>
+        <table>
+            <caption>Computers</caption>
+            <tr>
+                <th></th>
+                <th><button class="btn" id="1" value="1">1</button></th>
+                <th><button class="btn" id="2" value="2">2</button></th>
+                <th><button class="btn" id="3" value="3">3</button></th>
+            </tr>
+            <tr>
+                <td>CPU Speed: </td>
+                <td id="td1" colspan="3">click a button to load</td>
+            </tr>
+            <tr>
+                <td>RAM amount: </td>
+                <td id="td2" colspan="3">click a button to load</td>
+            </tr>
+            <tr>
+                <td>Storage space: </td>
+                <td id="td3" colspan="3">click a button to load</td>
+            </tr>
+            <tr>
+                <td>Price: </td>
+                <td id="td4" colspan="3">click a button to load</td>
+            </tr>
+        </table>   
+    </body>
+</html>
